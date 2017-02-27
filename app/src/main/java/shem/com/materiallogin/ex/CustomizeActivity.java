@@ -23,7 +23,7 @@ public class CustomizeActivity extends AppCompatActivity {
             public void onLogin(TextInputLayout loginUser, TextInputLayout loginPass) {
                 String user = loginUser.getEditText().getText().toString();
                 if (user.isEmpty()) {
-                    loginUser.setError("User name can't be empty");
+                    loginUser.setError("Email can't be empty");
                     return;
                 }
                 loginUser.setError("");
@@ -44,7 +44,7 @@ public class CustomizeActivity extends AppCompatActivity {
             public void onRegister(TextInputLayout registerUser, TextInputLayout registerPass, TextInputLayout registerPassRep) {
                 String user = registerUser.getEditText().getText().toString();
                 if (user.isEmpty()) {
-                    registerUser.setError("User name can't be empty");
+                    registerUser.setError("Email can't be empty");
                     return;
                 }
                 registerUser.setError("");
